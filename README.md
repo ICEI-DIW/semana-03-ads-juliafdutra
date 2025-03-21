@@ -8,17 +8,19 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
+- Nome:Julia Ferreira Dutra
+- Matricula:876577
+- Proposta de projeto escolhida:Diretorio de receitas 
 - Breve descrição sobre seu projeto:
 
 
 ## Print do esboço criada
 
-<<  COLOQUE A IMAGEM AQUI >>
+ ## https://1drv.ms/f/c/99ad2569a6e19b6d/EhASDimj-L5Juq2TEwhEaeYBJh50rg6Xmebyov5GDC4B7g?e=Ge6Ie7
 
 
 ## Print da home-page criada
 
 <<  COLOQUE A IMAGEM AQUI >>
+
+## https://1drv.ms/i/c/99ad2569a6e19b6d/EXwzIRwFdRFAi3iGOO3jXBMBxQoJ9Bmm5spCod2hT20wgw?e=Vfql9e

@@ -16,7 +16,7 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 
 ## Print do esboço criada
 
- ## https://1drv.ms/f/c/99ad2569a6e19b6d/EhASDimj-L5Juq2TEwhEaeYBJh50rg6Xmebyov5GDC4B7g?e=Ge6Ie7
+  ## https://1drv.ms/i/c/99ad2569a6e19b6d/ERAgcxeXqo1Poekw9N2r6JEBsYPtN4FvJt4_2P-vKPywGw?e=5yE2EO
 
 
 ## Print da home-page criada

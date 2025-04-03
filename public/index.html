@@ -1,12 +1,434 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Receitas Culinárias</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+    </style>
 </head>
 <body>
-    
-</body>
-</html>
+    <!-- Header -->
+    <header class="bg-gray-900 text-white py-3">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-xl font-medium">As melhores receitas culinárias</h1>
+        </div>
+    </header>
+    <!--Barra de pesquisa-->
+      <div class="container mx-auto mt-8 px-4">
+        <div class=""relative max-w-3xl mx-auto>
+            <input type="text"
+             placeholder="Pesquisar receitas"
+              class="w-full py3 px-12 rounded-full bg-white shadow-sm border border-gray-200 focus:outline-none focus:ring-2 focus: ring-blue-500 focus:border-transparent">
+               <i class="fas fa-search absolute left-4 top- 1/2 transform -translate-y-1/2 text-gray-400"></i>
+        </div>
+      </div>
+    <!--navegação-->
+    <nav class="container mx-auto mt-6 px-4">
+        <ul class="flex flex-wrap gap-4">
+            <button class="bg-white hover:bg-gray-50 px-8 py-3 roundend-full shadow-sm font-medium transition-colors">
+                inicio
+            </button>
+        </li>
+        <li>
+            <button class="bg-white hover:bg-gray-50 px-8 py-3 rounded-full shadow-sm font-medium transition-colors">
+                Mais buscados
+            </button>
+        </ul>
+    </nav>
+
+    <!-- Categorias -->
+    <main class="container mx-auto mt-8 px-4 pb-12">
+        <section class="mb-8">
+            <h2 class="text-lg font-medium mb-4 bg-gray-700 text-white py-3 px-4 rounded-lg">Massas</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                
+                <!-- Receita 1 - Lasanha -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onclick="abrirModal('lasanha')">
+                    <img src="lasanha de carne moida.jpg" alt="lasanha" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-medium text-gray-800">Lasanha de Carne Moída</h3>
+                    </div>
+                </div>
+
+                <!-- Receita 2 - Macarrão ao molho branco -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onclick="abrirModal('macarrao')">
+                    <img src="macarrao-ao-molho-branco-rapido.webp" alt="macarrao" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-medium text-gray-800">Macarrão ao molho branco</h4>
+                    </div>
+                </div>
+
+            <!-- Receita 3 - Macarronese  -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onclick="abrirModal('macarrao')">
+                <img src="macarronese simples.webp" alt="macarronese" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h5 class="font-medium text-gray-800">Macarronese</h5>
+                </div>
+            </div>
+
+              <!-- Receita 4 - yakisoba -->
+              <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onclick="abrirModal('macarrao')">
+                <img src="yakisoba.webp" alt="yakisoba" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h6 class="font-medium text-gray-800">yakisoba</h6>
+                </div>
+            </div>
+
+            <!-- Receita 5 -  nhoque de batata -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onclick="abrirModal('macarrao')">
+                <img src="nhoque-de-batata.webp" alt="macarronese" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h7 class="font-medium text-gray-800">nhoque-de-batata</h7>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+ 
+    <!-- doces e sobremesas -->
+
+    <main class="container mx-auto mt-8 px-4 pb-12">
+        <section class="mb-8">
+            <h8 class="text-lg font-medium mb-4 bg-gray-700 text-white py-3 px-4 rounded-lg">Doces e sobremesas</h8>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+
+         <!-- Receita 1 - mousse -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onclick="abrirModal('macarrao')">
+            <img src="mousse-de-maracuja.webp" alt="mousse-de-maracuja" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h9 class="font-medium text-gray-800">mousse-de-maracuja</h9>
+            </div>
+        </div>
+
+         <!-- Receita 2 - pudim  -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onclick="abrirModal('macarrao')">
+            <img src="pudim-de-leite-condensado.webp" alt="pudim" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h10 class="font-medium text-gray-800">Pudim</h10>
+            </div>
+        </div>
+
+         <!-- Receita 3 - bombom de travessa -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onclick="abrirModal('macarrao')">
+            <img src="bombom-de-travessa.webp" alt="bombom-de-travessa" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h11 class="font-medium text-gray-800">bombom-de-travessa</h11>
+            </div>
+        </div>
+
+         <!-- Receita 4 - bolo de chocolate -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onclick="abrirModal('macarrao')">
+            <img src="bolo-de-chocolate.webp" alt="bolo" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h11 class="font-medium text-gray-800">Bolo de chocolate</h11>
+            </div>
+        </div>
+           
+         <!-- Receita 5 - torta de limão -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onclick="abrirModal('macarrao')">
+            <img src="torta-de-limao.webp" alt="torta-de-limao" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h12 class="font-medium text-gray-800">Torta de limão</h12>
+            </div>
+        </div> 
+    </section>
+    </main>
+
+         <!-- Carnes-->
+
+    <main class="container mx-auto mt-8 px-4 pb-12">
+        <section class="mb-8">
+            <h8 class="text-lg font-medium mb-4 bg-gray-700 text-white py-3 px-4 rounded-lg">Carnes</h8>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+
+                 <!-- Receita 1 - costela na panela de pressão -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onclick="abrirModal('macarrao')">
+            <img src="costela-na-panela-de-pressao.webp" alt="costela-na-panela-de-pressao" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h12 class="font-medium text-gray-800">costela-na-panela-de-pressao</h12>
+            </div>
+        </div>
+
+             <!-- Receita 2 - frengo assado -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onclick="abrirModal('macarrao')">
+            <img src="frango-assado.webp" alt="frango-assado" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h12 class="font-medium text-gray-800">frango assado</h12>
+            </div>
+        </div>
+
+         <!-- Receita 3- file mignon -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onclick="abrirModal('macarrao')">
+            <img src="file-mignon-com-molho-de-mostarda.webp" alt="file mignon" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h12 class="font-medium text-gray-800">file mignon</h12>
+            </div>
+        </div>
+
+         <!-- Receita 4 - fraldinha -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onclick="abrirModal('macarrao')">
+            <img src="fraldinha-no-forno.webp" alt="fraldinha" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h12 class="font-medium text-gray-800">fraldinha-no-forno</h12>
+            </div>
+        </div>
+
+         <!-- Receita 5 - picanha -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onclick="abrirModal('macarrao')">
+            <img src="picanha-na-airfryer.webp" alt="picanha" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h12 class="font-medium text-gray-800">picanha-na-airfryer</h12>
+            </div>
+        </div>
+
+    <!-- Modal -->
+    <div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg w-96">
+            <h2 id="modal-titulo" class="text-xl font-semibold mb-4"></h2>
+            <h3 class="text-lg font-medium">Ingredientes:</h3>
+            <ul id="modal-ingredientes" class="list-disc ml-5 mb-4"></ul>
+            <h3 class="text-lg font-medium">Modo de Preparo:</h3>
+            <p id="modal-preparo" class="text-gray-700"></p>
+            <button onclick="fecharModal()" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Fechar</button>
+        </div>
+    </div>
+      
+    <script>
+        // Dados das receitas
+        const receitas = {
+            lasanha: {
+                titulo: "Lasanha de Carne Moída",
+                ingredientes: [
+                    "1 pacote de massa para lasanha",
+                    "500g de carne moída",
+                    "1 cebola picada",
+                    "2 dentes de alho picados",
+                    "1 lata de molho de tomate",
+                    "200g de queijo mussarela",
+                    "200g de presunto",
+                    "Sal e pimenta a gosto"
+                ],
+                preparo: "Refogue a carne moída com alho e cebola. Adicione o molho de tomate e deixe cozinhar. Em um refratário, intercale camadas de massa, carne, presunto e queijo. Leve ao forno por 30 minutos a 180°C."
+            },
+            macarrao: {
+                titulo: "Macarrão ao Molho Branco",
+                ingredientes: [
+                    "250g de macarrão",
+                    "2 colheres de sopa de manteiga",
+                    "1 colher de sopa de farinha de trigo",
+                    "500ml de leite",
+                    "100g de queijo parmesão ralado",
+                    "Sal e noz-moscada a gosto"
+                ],
+                preparo: "Cozinhe o macarrão. Em outra panela, derreta a manteiga, adicione a farinha e misture bem. Acrescente o leite aos poucos e mexa até engrossar. Finalize com queijo e noz-moscada. Misture ao macarrão e sirva."
+            },
+            macarronese: {
+                titulo: "Macarronese",
+                ingredientes: [
+                    "500 g de macarrão parafuso",
+                    "1 lata de milho",
+                    "1 lata de ervilha",
+                    "150 g de uva passas",
+                    "150 g de presunto",
+                    "150 g de mussarela",
+                    "1 linguiça calabresa",
+                    "azeitona a gosto",
+                    "salsinha e cebolinha a gosto",
+                    "maionese e sal a gosto"
+                ],
+                preparo: "Misture todos os ingredientes no macarrão cozido e sirva gelado",
+            },
+            yakisoba: {
+    titulo: "Yakisoba",
+    ingredientes: [
+        "1 envelope de tempero em pó para aves",
+        "1 colher (sopa) de gengibre em conserva picado",
+        "500g de alcatra ou coxão mole em tiras",
+        "500g de peito de frango em cubos",
+        "1 cebola em pétalas",
+        "1/2 pimentão vermelho em cubos",
+        "1/2 pimentão verde em cubos",
+        "1/2 pimentão amarelo em cubos",
+        "1 cenoura em rodelas finas",
+        "1 xícara (chá) de brócolis cozido al dente em buquês",
+        "4 colheres (sopa) de óleo",
+        "1 xícara (chá) de champignon fatiado",
+        "3 colheres (sopa) de óleo de gergelim",
+        "1 xícara (chá) de molho de soja",
+        "1 xícara (chá) de água",
+        "1 colher (sopa) de amido de milho",
+        "1 pacote de macarrão tipo Lámen cozido (500g)"
+    ],
+    preparo: [
+        "Tempere as carnes com o tempero para aves e reserve.",
+        "Em uma panela grande, aqueça metade do óleo e doure a carne de boi.",
+        "Adicione o frango e continue fritando até dourar bem.",
+        "Retire as carnes e, na mesma panela, acrescente o restante do óleo e refogue a cebola, os pimentões e a cenoura até começarem a amolecer.",
+        "Adicione o brócolis e o champignon e misture bem.",
+        "Em uma tigela, misture o óleo de gergelim, o molho de soja, a água e o amido de milho até dissolver completamente.",
+        "Devolva as carnes à panela e despeje o molho preparado, mexendo bem até engrossar ligeiramente.",
+        "Acrescente o macarrão cozido e misture tudo delicadamente para incorporar os sabores.",
+        "Sirva quente e aproveite!"
+       ], 
+       nhoque: {
+        titulo: "Nhoque de Batata",
+        ingredientes: [
+            "1kg de batata",
+            "1 xícara (chá) de farinha de trigo",
+            "1 ovo",
+            "Sal a gosto",
+            "Molho de tomate a gosto",
+            "Queijo parmesão ralado"
+        ],
+        preparo: [
+            "Cozinhe as batatas até ficarem macias e amasse bem.",
+            "Misture com o ovo e a farinha até formar uma massa homogênea.",
+            "Modele os nhoques e cozinhe-os em água fervente até subirem à superfície.",
+            "Escorra e sirva com molho de tomate e queijo ralado."
+        ]
+    },
+    mousseMaracuja: {
+        titulo: "Mousse de Maracujá",
+        ingredientes: [
+            "1 lata de leite condensado",
+            "1 lata de creme de leite",
+            "1 xícara (chá) de suco de maracujá concentrado",
+            "Polpa de maracujá para decorar"
+        ],
+        preparo: [
+            "Bata todos os ingredientes no liquidificador até obter uma mistura homogênea.",
+            "Despeje em taças e leve à geladeira por pelo menos 3 horas.",
+            "Decore com a polpa de maracujá antes de servir."
+        ]
+    },
+    pudim: {
+        titulo: "Pudim",
+        ingredientes: [
+            "1 lata de leite condensado",
+            "2 medidas (da lata) de leite",
+            "3 ovos",
+            "1 xícara (chá) de açúcar para a calda"
+        ],
+        preparo: [
+            "Derreta o açúcar em uma forma até formar um caramelo.",
+            "Bata os ovos, leite condensado e leite no liquidificador.",
+            "Despeje na forma caramelizada e asse em banho-maria por 1 hora.",
+            "Deixe esfriar e desenforme."
+        ]
+    },
+    bombomTravessa: {
+        titulo: "Bombom de Travessa",
+        ingredientes: [
+            "1 lata de leite condensado",
+            "1 lata de creme de leite",
+            "2 colheres (sopa) de chocolate em pó",
+            "200g de chocolate meio amargo derretido",
+            "200g de morangos picados"
+        ],
+        preparo: [
+            "Misture o leite condensado e o chocolate em pó e cozinhe até engrossar.",
+            "Adicione o creme de leite e misture bem.",
+            "Em um refratário, faça camadas de creme e morangos.",
+            "Finalize com chocolate derretido e leve à geladeira."
+        ]
+    },
+    boloChocolate: {
+        titulo: "Bolo de Chocolate",
+        ingredientes: [
+            "3 ovos",
+            "1 xícara (chá) de açúcar",
+            "1/2 xícara (chá) de óleo",
+            "1 xícara (chá) de leite",
+            "2 xícaras (chá) de farinha de trigo",
+            "1 xícara (chá) de chocolate em pó",
+            "1 colher (sopa) de fermento em pó"
+        ],
+        preparo: [
+            "Bata os ovos, açúcar e óleo.",
+            "Adicione o leite, farinha e chocolate em pó.",
+            "Por último, misture o fermento.",
+            "Asse em forno a 180°C por 40 minutos."
+        ]
+    },
+    tortaLimao: {
+        titulo: "Torta de Limão",
+        ingredientes: [
+            "200g de biscoito maisena",
+            "100g de manteiga derretida",
+            "1 lata de leite condensado",
+            "Suco de 2 limões",
+            "1 lata de creme de leite",
+            "Raspas de limão para decorar"
+        ],
+        preparo: [
+            "Misture o biscoito triturado com a manteiga e forre uma forma.",
+            "Bata o leite condensado, suco de limão e creme de leite.",
+            "Despeje sobre a base e leve à geladeira por 3 horas."
+        ],
+          
+    costelaPanelaPressao: {
+        titulo: "Costela na Panela de Pressão",
+        ingredientes: [
+            "1,5kg de costela bovina em pedaços",
+            "3 batatas cortadas em cubos",
+            "2 cebolas cortadas em rodelas",
+            "3 dentes de alho picados",
+            "1 cenoura cortada em cubos",
+            "1 pimentão vermelho picado",
+            "1 tomate picado",
+            "Sal e pimenta a gosto",
+            "1 colher (sopa) de óleo",
+            "Cheiro-verde a gosto"
+        ],
+        preparo: [
+            "Aqueça o óleo na panela de pressão e doure a cebola e o alho.",
+            "Adicione a costela e deixe dourar por alguns minutos.",
+            "Tempere com sal e pimenta.",
+            "Acrescente os vegetais e misture bem.",
+            "Tampe a panela e cozinhe por cerca de 40 minutos após pegar pressão.",
+            "Finalize com cheiro-verde e sirva."
+        ]
+    },
+    frangoAssado: {
+        titulo: "Frango Assado",
+        ingredientes: [
+            "1 frango inteiro",
+            "3 dentes de alho amassados",
+            "1 cebola ralada",
+            "Suco de 1 limão",
+            "2 colheres (sopa) de manteiga",
+            "Sal e pimenta a gosto",
+            "1 colher (chá) de páprica doce",
+            "Ervas finas a gosto"
+        ],
+        preparo: [
+            "Tempere o frango com alho, cebola, suco de limão, sal, pimenta e páprica.",
+            "Passe a manteiga sobre a pele do frango.",
+            "Deixe marinar por pelo menos 1 hora.",
+            "Asse em forno pré-aquecido a 200°C por cerca de 1h30, regando com o próprio caldo.",
+            "Sirva quente acompanhado de arroz ou salada."
+        ]
+    },
+    fileMignon: {
+        titulo: "Filé Mignon ao Molho",
+        ingredientes: [
+            "4 medalhões de filé mignon",
+            "Sal e pimenta a gosto",
+            "2 colheres (sopa) de manteiga",
+            "1 xícara (chá) de creme de leite",
+            "1/2 xícara (chá) de vinho tinto",
+            "1 colher (sopa) de mostarda",
+            "1 colher (sopa) de molho inglês"
+        ],
+        preparo: [
+            "Tempere os medalhões com sal e pimenta.",
+            "Aqueça a manteiga e grelhe os medalhões até o ponto desejado.",
+            "Retire e r

@@ -8,17 +8,17 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
+- Nome: Julia Ferreira Dutra 
+- Matricula:876577
+- Proposta de projeto escolhida:site de receitas 
 - Breve descrição sobre seu projeto:
 
 
 ## Print do esboço criada
+![1743652893903.jpeg](https://github.com/user-attachments/assets/fe404117-ff27-44f8-9d70-4a649df62fb5)
 
-<<  COLOQUE A IMAGEM AQUI >>
 
 
 ## Print da home-page criada
 
-<<  COLOQUE A IMAGEM AQUI >>
+![1743653038786.jpg](https://github.com/user-attachments/assets/ae56f909-e4fb-41e3-9b3c-fdb51d5e3cb6)
